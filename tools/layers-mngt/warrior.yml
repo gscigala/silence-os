@@ -1,0 +1,16 @@
+- name: "Mon Projet" 
+  hosts: 127.0.0.1 
+  connection: local 
+  tasks:
+
+     - name: "Get poky" 
+       git:
+        repo: git://git.yoctoproject.org/poky
+        version: warrior
+        dest: "{{TOP_SRCDIR}}/poky"
+
+     - name: "Get meta-raspberrypi"
+       git:
+        repo: git://git.yoctoproject.org/meta-raspberrypi
+        version: warrior
+        dest: "{{TOP_SRCDIR}}/poky/meta-raspberrypi"
