@@ -1,0 +1,28 @@
+- name: "Mon Projet" 
+  hosts: 127.0.0.1 
+  connection: local 
+  tasks:
+
+     - name: "Get poky" 
+       git:
+        repo: git://git.yoctoproject.org/poky
+        version: zeus
+        dest: "{{TOP_SRCDIR}}/poky"
+
+     - name: "Get meta-openembedded"
+       git:
+        repo: git://git.openembedded.org/meta-openembedded
+        version: zeus
+        dest: "{{TOP_SRCDIR}}/meta-openembedded"
+
+     - name: "Get meta-raspberrypi"
+       git:
+        repo: git://git.yoctoproject.org/meta-raspberrypi
+        version: zeus
+        dest: "{{TOP_SRCDIR}}/meta-raspberrypi"
+
+     - name: "Get meta-silence"
+       git:
+        repo: https://github.com/gscigala/meta-silence.git
+        version: develop
+        dest: "{{TOP_SRCDIR}}/meta-silence"
