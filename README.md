@@ -21,6 +21,9 @@ Silence OS is based on the Yocto Project. You need to install Yocto required pac
 first. You can found all required packages 
 [here](https://docs.yoctoproject.org/ref-manual/system-requirements.html).
 
+To synchronize sources, ansible is required. More information
+[here](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html).
+
 ## Fetch
 
 To fetch all project depedencies, you need to execute first the synchronization script.
