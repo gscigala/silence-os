@@ -28,14 +28,19 @@ To synchronize sources, ansible is required. More information
 
 To fetch all project depedencies, you need to execute first the synchronization script.
 This script aims to synchronize layers of silence OS in a particular configuration. To get
-the lastest delivery:
+the lastest delivery :
 
-	$ ./sync.sh master
+	$ ./sync.sh lastreleased
 	
 Mutliple configurations are available:
 
-* master : lastest silence-os layer configuration delivery.
+* lastreleased : lastest release of Silence OS.
+* vX.Y.Z : Silence OS vX.Y.Z release.
 * develop : current development layer configuration.
+
+All configurations can be displayed with :
+
+	$ ./sync.sh --help
 
 ## Configure
 
