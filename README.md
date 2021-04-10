@@ -46,11 +46,14 @@ To set up the compilation enviroment, you need to execute:
 When the environment is correctly setted, you can now customize the build by appending to
 the file `conf/local.conf`:
 
-	# Use U-Boot as bootloader
-	RPI_USE_U_BOOT = "1"
-
+	# The machine is a raspberry pi 0 with wifi
+	MACHINE = "raspberrypi0-wifi"
+	
 	# The distro is defined by this project
 	DISTRO = "silence"
+
+	# Use U-Boot as bootloader
+	RPI_USE_U_BOOT = "1"
 	
 	# Define your timezone here, based on https://git.yoctoproject.org/cgit/cgit.cgi/poky/tree/meta/recipes-extended/timezone/tzdata.bb#n127
 	DEFAULT_TIMEZONE = "Europe/Paris"
