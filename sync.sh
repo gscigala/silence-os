@@ -4,7 +4,7 @@
 export LOCAL_REPO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Default configuration
-config="${LOCAL_REPO_DIR}/tools/layers-mngt/warrior.yml"
+config="${LOCAL_REPO_DIR}/tools/layers-mngt/lastreleased.yml"
 
 # Return value
 return_value=-1
