@@ -64,6 +64,7 @@ the file `conf/local.conf`:
 	DEFAULT_TIMEZONE = "Europe/Paris"
 	
 	# Fill your wifi informations here
+	# Security type is based on https://manpages.debian.org/testing/connman/connman-service.config.5.en.html#Security=
 	SILENCE_WIFI_NAME = "your WiFi name here"
 	SILENCE_WIFI_PASSPHRASE = "your passphrase"
 	SILENCE_WIFI_SECURITY = "your security"
