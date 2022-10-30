@@ -6,19 +6,19 @@
      - name: "Get poky" 
        git:
         repo: git://git.yoctoproject.org/poky
-        version: langdale
+        version: kirkstone
         dest: "{{TOP_SRCDIR}}/poky"
 
      - name: "Get meta-openembedded"
        git:
         repo: git://git.openembedded.org/meta-openembedded
-        version: langdale
+        version: kirkstone
         dest: "{{TOP_SRCDIR}}/meta-openembedded"
 
      - name: "Get meta-raspberrypi"
        git:
         repo: git://git.yoctoproject.org/meta-raspberrypi
-        version: master
+        version: kirkstone
         dest: "{{TOP_SRCDIR}}/meta-raspberrypi"
 
      - name: "Get meta-silence"
