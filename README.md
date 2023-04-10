@@ -51,6 +51,9 @@ To set up the compilation enviroment, you need to execute:
 When the environment is correctly setted, you can now customize the build by appending to
 the file `conf/local.conf`:
 
+	# Raspberry Pi IP compliance https://meta-raspberrypi.readthedocs.io/en/latest/ipcompliance.html
+	LICENSE_FLAGS_ACCEPTED = "synaptics-killswitch"
+
 	# The machine is a raspberry pi 0 with wifi
 	MACHINE = "raspberrypi0-wifi"
 	
