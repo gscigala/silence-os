@@ -9,7 +9,7 @@ build/bitbake-cookerdaemon.log
 build/conf/sanity_info
 build/conf/templateconf.cfg
 build/conf/local.conf
-
+build/conf/conf-notes.txt
 
 # Created by https://www.gitignore.io/api/ansible
 # Edit at https://www.gitignore.io/?templates=ansible
