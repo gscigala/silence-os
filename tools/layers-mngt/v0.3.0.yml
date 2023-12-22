@@ -1,0 +1,28 @@
+- name: "Silence OS develop"
+  hosts: 127.0.0.1
+  connection: local
+  tasks:
+
+     - name: "Get poky"
+       git:
+        repo: git://git.yoctoproject.org/poky
+        version: 53387c5ca39d685df5394dae026ded5ad979d382
+        dest: "{{TOP_SRCDIR}}/poky"
+
+     - name: "Get meta-openembedded"
+       git:
+        repo: git://git.openembedded.org/meta-openembedded
+        version: 1750c66ae8e4268c472c0b2b94748a59d6ef866d
+        dest: "{{TOP_SRCDIR}}/meta-openembedded"
+
+     - name: "Get meta-raspberrypi"
+       git:
+        repo: git://git.yoctoproject.org/meta-raspberrypi
+        version: fde68b24f08b0eac4ad4bfd3c461dc17fe3a263c
+        dest: "{{TOP_SRCDIR}}/meta-raspberrypi"
+
+     - name: "Get meta-silence"
+       git:
+        repo: https://github.com/gscigala/meta-silence.git
+        version: 0a2e889ab36ae1b434daaa152ed88df3e7508cb8
+        dest: "{{TOP_SRCDIR}}/meta-silence"
