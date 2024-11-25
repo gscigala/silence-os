@@ -1,6 +1,6 @@
 # silence-os
 
-Silence OS is a Linux distribution based on the Yocto project. Multiple usage are 
+Silence OS is a Linux distribution based on the Yocto project. Multiple usage are
 available, depending of the required utilisation.
 
 ## Requirements
@@ -17,9 +17,9 @@ More information about the hardware here :
 
 ### Software
 
-Silence OS is based on the Yocto Project. You need to install Yocto required packages 
-first. You can found all required packages 
-[here](https://docs.yoctoproject.org/ref-manual/system-requirements.html).
+Silence OS is based on the Yocto Project and use a Docker Engine container. You can find
+Docker Engine installation procedure
+[here](https://docs.docker.com/engine/install/)
 
 To synchronize sources, ansible is required. More information
 [here](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html).
@@ -43,6 +43,10 @@ All configurations can be displayed with :
 	$ ./sync.sh --help
 
 ## Configure
+
+To start the docker compilation environment, execute:
+
+	$ docker/run.sh
 
 To set up the compilation enviroment, you need to execute:
 
