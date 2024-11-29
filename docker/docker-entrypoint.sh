@@ -44,4 +44,6 @@ if [ ! "${ENV_RUN_SCRIPT}" = "" ]; then
     echo "${ENV_RUN_SCRIPT}" >> /home/${USER}/.bashrc
 fi
 
+echo 'source /workdir/sources/poky/oe-init-build-env' >> /home/${USER}/.bashrc
+
 su - "${USER}"
