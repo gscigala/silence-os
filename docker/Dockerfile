@@ -1,4 +1,5 @@
 # SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+# Copyright 2021 Variscite Ltd.
 
 FROM ubuntu:22.04
 
