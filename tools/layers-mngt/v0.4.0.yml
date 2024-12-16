@@ -6,23 +6,23 @@
      - name: "Get poky"
        git:
         repo: git://git.yoctoproject.org/poky
-        version: scarthgap
+        version: 2541a8171f91812a4b16e7dc4da0d77d2318a256
         dest: "{{TOP_SRCDIR}}/poky"
 
      - name: "Get meta-openembedded"
        git:
         repo: git://git.openembedded.org/meta-openembedded
-        version: scarthgap
+        version: b8d1a14f7f3b76457c36752202ea7ae5881b6654
         dest: "{{TOP_SRCDIR}}/meta-openembedded"
 
      - name: "Get meta-raspberrypi"
        git:
         repo: git://git.yoctoproject.org/meta-raspberrypi
-        version: scarthgap
+        version: 6df7e028a2b7b2d8cab0745dc0ed2eebc3742a17
         dest: "{{TOP_SRCDIR}}/meta-raspberrypi"
 
      - name: "Get meta-silence"
        git:
         repo: https://github.com/gscigala/meta-silence.git
-        version: develop
+        version: 80dc65a2089b5b7375cb6eb920ae572f632cbf28
         dest: "{{TOP_SRCDIR}}/meta-silence"

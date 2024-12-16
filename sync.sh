@@ -51,7 +51,7 @@ if [ $# -gt 0 ]; then
 	    config="${LOCAL_REPO_DIR}/tools/layers-mngt/${1}.yml"
 
 	    # Execute playbook
-	    ansible-playbook ${config} --extra-vars "TOP_SRCDIR=${LOCAL_REPO_DIR}/layers/"
+	    ansible-playbook ${config} --extra-vars "TOP_SRCDIR=${LOCAL_REPO_DIR}/sources/"
 
 	    return_value=0
 	fi
