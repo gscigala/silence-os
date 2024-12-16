@@ -6,19 +6,19 @@
      - name: "Get poky"
        git:
         repo: git://git.yoctoproject.org/poky
-        version: styhead
+        version: scarthgap
         dest: "{{TOP_SRCDIR}}/poky"
 
      - name: "Get meta-openembedded"
        git:
         repo: git://git.openembedded.org/meta-openembedded
-        version: styhead
+        version: scarthgap
         dest: "{{TOP_SRCDIR}}/meta-openembedded"
 
      - name: "Get meta-raspberrypi"
        git:
         repo: git://git.yoctoproject.org/meta-raspberrypi
-        version: master
+        version: scarthgap
         dest: "{{TOP_SRCDIR}}/meta-raspberrypi"
 
      - name: "Get meta-silence"
