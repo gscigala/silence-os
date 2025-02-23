@@ -67,6 +67,9 @@ the file `conf/local.conf`:
 	# Use U-Boot as bootloader
 	RPI_USE_U_BOOT = "1"
 	
+	# To enable SPI (used for e-paper screen)
+	ENABLE_SPI_BUS = "1"
+	
 	# Define your timezone here, based on https://git.yoctoproject.org/cgit/cgit.cgi/poky/tree/meta/recipes-extended/timezone/tzdata.bb#n127
 	DEFAULT_TIMEZONE = "Europe/Paris"
 	
@@ -76,6 +79,9 @@ the file `conf/local.conf`:
 	SILENCE_WIFI_PASSPHRASE = "your passphrase"
 	SILENCE_WIFI_SECURITY = "your security"
 	
+	# For more information to generate your token, please visit https://github.com/gscigala/commutator-idfm-line-reports
+	SILENCE_COMMUTATOR_IDFM_LINE_REPORTS_TOKEN = "your token"
+
 ## Build
 
 To compile silence OS, execute:
@@ -86,7 +92,6 @@ Where `$image` is the required image. Available images :
 
 * silence-cron-connected-clock-image : connected-clock, started and stopped automatically
 		with time.
+* silence-commutator-image : commutator display, using e-paper screen.
 * silence-image : minimalist image.
 * silence-dev-image : image used for development.
-
-
